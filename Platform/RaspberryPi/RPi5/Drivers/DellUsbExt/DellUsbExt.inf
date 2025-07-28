@@ -1,0 +1,33 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = DellUsbExt
+  FILE_GUID                      = 94f12735-06da-40e1-98bb-f0a7e24a8b07
+  MODULE_TYPE                    = DXE_DRIVER
+  ENTRY_POINT                    = DellUsbExtDxeEntryPoint # _ModuleEntryPoint
+
+[Sources]
+  DellUsbExt.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+  DebugLib|MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+  PrintLib
+  BaseMemoryLib
+  # added more
+  DevicePathLib
+
+[Protocols]
+  gUsbExtProtocolGuid
+  gEfiUsbIoProtocolGuid
+  # Newly added (I guess its UEFI)
+  gEfiDevicePathProtocolGuid
+  gEfiDevicePathToTextProtocolGuid
+  gEfiPciIoProtocolGuid
+
+[Depex]
+  TRUE
