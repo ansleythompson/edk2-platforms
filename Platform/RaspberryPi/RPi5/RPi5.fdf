@@ -326,6 +326,10 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
 
+  FILE DRIVER = D6A2CB7F-6A18-4E2F-B43B-9920A733500A {
+    SECTION PE32 = ../build-tool/output/Menu.efi
+  }
+
   #
   # SD/eMMC Support
   #
