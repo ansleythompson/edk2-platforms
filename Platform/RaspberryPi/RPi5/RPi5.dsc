@@ -568,7 +568,7 @@
 
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
 
-  #Platform/RaspberryPi/RPi5/Drivers/DellUsbExt/DellUsbExt.inf
+  Platform/RaspberryPi/RPi5/Drivers/DellUsbExt/DellUsbExt.inf
   ArmPkg/Drivers/ArmGicDxe/ArmGicV2Dxe.inf
   Platform/RaspberryPi/Drivers/RpiFirmwareDxe/RpiFirmwareDxe.inf
   Platform/RaspberryPi/RPi5/Drivers/RpiPlatformDxe/RpiPlatformDxe.inf
